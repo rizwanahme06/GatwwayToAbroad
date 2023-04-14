@@ -5,37 +5,131 @@ import Ielts from '../image/ielts.jpg'
 import StudentVisa from '../image/student-visa-application.jpg'
 import UK from '../image/uk_flag.png'
 import US from '../image/us_flag.png'
+import US_Collage from '../image/20060425_NassauHall_JJ_IMG_5973.jpg'
+import Mentor from '../image/mentor.jpg'
+import ShortList from '../image/universities.jpg'
 import CollageApplication from '../image/college-application.jpg'
 import {  Box, Button, Typography, Container, Grid, Card, CardActionArea, CardActions, CardMedia, CardContent } from '@mui/material'
 
 
-const HomePage = () => {
+const USA = () => {
   return (
     <>
             {/* Contained */}
-            <Container maxWidth="xl" sx={{ m: 0, display: 'flex', alignItems: 'center' }}>
-          <Grid container sx={{ mt: 5, alignItems: "center", justifyContent: 'space-around' }}>
-            <Grid item sm={4}>
-              <Typography variant='h2' sx={{ color: 'black', fontFamily: "cursive", fontWeight: "800", fontSize: "100px" }} >STUDY</Typography>
-              <Typography variant='h4' sx={{ color: 'gray', fontWeight: "500", letterSpacing: "0.05em" }} >IN THE BEST <br /> UNIVERSITIES/COLLEGES ACROSS <br /> THE WORLD.</Typography>
-              <Typography variant='h5' sx={{ color: 'gray', my: 2 }} >and we'll assist you to get there.</Typography>
-            </Grid>
-            <Grid item sm={5} sx={{ p: 1 ,maxWidth:"700"}}>
-              <Box component="img" src={Collage} alt='web logo' sx={{ height: 400,width:"100%"}}></Box>
-            </Grid>
+          <Container maxWidth="xl" sx={{ m: 0, display:"grid",alignItems:"center"}}>
+            <Typography variant='h2' sx={{textAlign:"center",fontWeight:"500" , fontFamily:"sans-serif",color:"blue"}}>Study in Canada</Typography>
+            <Typography variant='h4' sx={{textAlign:"center",fontWeight:"500" , fontFamily:"cursive",padding:"50px"}}>For generations, the Canada has been the clear favourite for overseas students. More than a million international students seek to Study in the Canada each year to receive a top-notch education and launch their careers. India makes up about 30% of all international students, making it one of the largest contributors. The land of dreams truly lives up to this title by offering students fantastic chances for research, innovation, and entrepreneurial direction. The country has a multicultural population and has embraced and even welcomed that diversity over the years. It is home to 25 universities that are ranked in the top 50 universities around the world. This gigantic nation also has plenty of deserts, snow peaks, mountains, waterfalls, and beaches to please your eyes and soothe your soul.</Typography>
+         <Grid display="flex" alignItems="center"justifyContent="center" px="5" >
+          <Grid item >
+            <Typography component="img"  src={Canada}/>
           </Grid>
+          <Button size="small" variant='contained' sx={{ color: "white" ,ml:"15px" }}>
+                    learn More
+                  </Button>
+         </Grid>
+        
         </Container>
 
         {/* About */}
         <Container maxWidth="xl" sx={{ mt: 5, display: 'flex', alignItems: 'center' }}>
           <Grid container sx={{ alignItems: "center", justifyContent: 'space-around' }}>
             <Grid item sm={4}>
-              <Typography variant='h2' sx={{ color: 'gray', fontFamily: "sans-serif", fontWeight: "800", fontSize: "50px" }} >About us</Typography>
+              <Typography variant='h2' sx={{ color: 'gray', fontFamily: "sans-serif", fontWeight: "800", fontSize: "50px" }} >Why to Study Canada</Typography>
             </Grid>
             <Grid item sm={5.2} sx={{ position: "relative" }}>
-              <Typography variant='h4' sx={{ color: 'black', fontWeight: "500", fontSize: "20px" }} >Established in 2004, We are an Education consultancy (based out of Mumbai) which has helped students study in their desired university abroad for little or no cost at all.</Typography><br />
-              <Typography variant='h6' sx={{ top: "3px", color: 'black', fontWeight: "500", fontSize: "20px" }} >We help with <span style={{ color: "black", fontWeight: "bold" }}> Canadian SDS College</span> Admission,<span style={{ color: "black", fontWeight: "bold" }}>  UK</span> and <span style={{ color: "black", fontWeight: "bold" }}> USA</span> University admission, Forex to Foriegn Universities and Student Visa <span style={{ color: "black", fontWeight: "bold" }}> (for free)</span>, since we are Official agent for most of the colleges and universities in Canada and UK. In a nutshell, you don't have to pay us anything.</Typography><br />
-              <Typography variant='h6' sx={{ color: 'black', fontWeight: "500", fontSize: "20px" }} >We have so far assisted (from counselling to Visa Approval) approximately<span style={{ color: "black", fontWeight: "bold" }}> 2000</span> students since last 5 years across different countries.</Typography>
+              <Typography variant='h4' sx={{letterSpacing:"0.1em", color: 'black', fontWeight: "500", fontSize: "20px" }} >Out of the top 100 universities in the world, 40 universities are from the Canada. There is no doubt about the quality of education provided in the Canada. But is that the only attractive thing about the country? Not at all! Here is what draws students:</Typography><br />
+            </Grid>
+          </Grid>
+        </Container>
+
+        {/* know more */}
+                {/* Services */}
+                <Container maxWidth="xl" sx={{ mt: 5, display: 'flex', alignItems: 'center', padding: "50px" }}>
+          <Grid container sx={{ alignItems: "center", justifyContent: 'space-around' }}>
+            <Grid item sm={3}>
+              <Typography variant='h3' sx={{ color: 'grey', fontFamily: "monospace", fontWeight: "500", fontSize: "37px" }} >Everything you need for your Canada Dream</Typography>
+            </Grid>
+            <Grid item sm={7} sx={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
+              <Card sx={{ maxWidth: 200, maxHeight: 300 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    src={Mentor}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" fontSize="18px">
+                      Mentor
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" variant='contained' sx={{ color: "white", margin: "auto" }}>
+                    learn More
+                  </Button>
+                </CardActions>
+              </Card>
+              <Card sx={{ maxWidth: 200, maxHeight: 250 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    src={ShortList}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" fontSize="18px">
+                    ShortList
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" variant='contained' sx={{ color: "white", margin: "auto" }}>
+                    learn More
+                  </Button>
+                </CardActions>
+              </Card>
+              <Card sx={{ maxWidth: 200, maxHeight: 250 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    src={CollageApplication}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" fontSize="18px">
+                      College Application
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" variant='contained' sx={{ color: "white", margin: "auto" }}>
+                    learn More
+                  </Button>
+                </CardActions>
+              </Card>
+              <Card sx={{ maxWidth: 200, maxHeight: 250 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    src={StudentVisa}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" fontSize="18px">
+                      Visa Application
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" variant='contained' sx={{ color: "white", margin: "auto" }}>
+                    learn More
+                  </Button>
+                </CardActions>
+              </Card>
             </Grid>
           </Grid>
         </Container>
@@ -234,4 +328,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default USA
